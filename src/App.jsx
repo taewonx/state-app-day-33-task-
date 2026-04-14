@@ -90,27 +90,34 @@ export default function App() {
 }
 
 // return (
-//     <>
+//   <div>
 //     <h1>Day 33 Task: State App</h1>
 //     <div>
-//       <h2>Redux Counter: {countRedux}</h2>
-//       <button onClick={() => dispatch(increment())}>+</button>
-//       {countRedux>=10 && <p>최대치 도달!</p>}
-//       <button onClick={() => dispatch(decrement())}>-</button>
-//       <button onClick={() => dispatch(reset())}>Reset</button>
-//       <button onClick={() => dispatch(incrementAsync())}>
-//         {reduxStatus === "loading" ? "Wait..." : "+ 1s"}
-//       </button>
-
-//       <h2>Zustand Counter: {count}</h2>
-//       <button onClick={increase}>+</button>
-//       {count>=10 && <p>최대치 도달!</p>}
-//       <button onClick={decrease}>-</button>
-//       <button onClick={resetZustand}>Reset</button>
-//       <button onClick={decreaseAsync}>
-//         {isWating ? "Wait..." : "- 1s"}
-//       </button>
+//       <div>
+//         <h2>Redux Counter: {countRedux}</h2>
+//         <div>
+//           <button onClick={() => dispatch(decrement())}>-</button>
+//           <button onClick={() => dispatch(increment())}>+</button>
+//           {countRedux >= 10 && <p>최대치 도달!</p>}
+//           <button onClick={() => dispatch(reset())}>Reset</button>
+//           <button onClick={() => dispatch(incrementAsync())}>
+//             {reduxStatus === "loading" ? "Wait..." : "+ 1s"}
+//           </button>
+//         </div>
+//       </div>
+//       <div>
+//         <h2>Zustand Counter: {count}</h2>
+//         <div>
+//           <button onClick={decrease}>-</button>
+//           <button onClick={increase}>+</button>
+//           {count >= 10 && <p>최대치 도달!</p>}
+//           <button onClick={resetZustand}>Reset</button>
+//           <button onClick={decreaseAsync}>
+//             {isWating ? "Wait..." : "- 1s"}
+//           </button>
+//         </div>
+//       </div>
 //     </div>
-//     </>
+//   </div>
 //   );
 // }
