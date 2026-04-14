@@ -5,6 +5,13 @@ const useCounterStore = create((set) => ({
   increase: () => set((state) => ({ count: state.count + 1 })),
   decrease: () => set((state) => ({ count: state.count - 1 })),
   reset: () => set({ count: 0 }),
+
+  isWating: false,
+  decreaseAsync: async () => {
+    set({ isWating: true });
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    set((state)=>({ count: state.count - 1, isWating: false }));
+  },
 }));
 
 export default useCounterStore;
