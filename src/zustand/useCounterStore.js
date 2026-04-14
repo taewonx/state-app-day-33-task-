@@ -6,6 +6,7 @@ const useCounterStore = create((set) => ({
   decrease: () => set((state) => ({ count: state.count - 1 })),
   reset: () => set({ count: 0 }),
 
+  // [도전 과제] 비동기 액션: 1초 후 감소
   isWating: false,
   decreaseAsync: async () => {
     set({ isWating: true });
