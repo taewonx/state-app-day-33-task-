@@ -36,7 +36,6 @@ export default function App() {
           >
             -
           </button>
-          {countRedux < 0 && <p className="text-blue-500 font-bold animate-pulse">최소치 도달!</p>}
           <button 
             className="bg-gray-200 text-gray-700 px-6 py-2 rounded-lg font-bold hover:bg-gray-300 transition"
             onClick={() => dispatch(reset())}
@@ -71,7 +70,6 @@ export default function App() {
           >
             -
           </button>
-          {count < 0 && <p className="text-blue-500 font-bold animate-pulse">최소치 도달!</p>}
           <button 
             className="bg-gray-200 text-gray-700 px-6 py-2 rounded-lg font-bold hover:bg-gray-300 transition"
             onClick={resetZustand}
@@ -99,7 +97,6 @@ export default function App() {
 //       <button onClick={() => dispatch(increment())}>+</button>
 //       {countRedux>=10 && <p>최대치 도달!</p>}
 //       <button onClick={() => dispatch(decrement())}>-</button>
-//       {countRedux<0 && <p>최소치 도달!</p>}
 //       <button onClick={() => dispatch(reset())}>Reset</button>
 //       <button onClick={() => dispatch(incrementAsync())}>
 //         {reduxStatus === "loading" ? "Wait..." : "+ 1s"}
@@ -109,12 +106,11 @@ export default function App() {
 //       <button onClick={increase}>+</button>
 //       {count>=10 && <p>최대치 도달!</p>}
 //       <button onClick={decrease}>-</button>
-//       {count<0 && <p>최소치 도달!</p>}
 //       <button onClick={resetZustand}>Reset</button>
 //       <button onClick={decreaseAsync}>
 //         {isWating ? "Wait..." : "- 1s"}
 //       </button>
 //     </div>
 //     </>
-  // );
-
+//   );
+// }
