@@ -25,17 +25,17 @@ export default function App() {
         <div className="flex flex-wrap items-center gap-3">
           <button 
             className="bg-purple-500 text-white px-6 py-2 rounded-lg font-bold hover:bg-purple-600 transition"
+            onClick={() => dispatch(decrement())}
+          >
+            -
+          </button>
+          <button 
+            className="bg-purple-500 text-white px-6 py-2 rounded-lg font-bold hover:bg-purple-600 transition"
             onClick={() => dispatch(increment())}
           >
             +
           </button>
           {countRedux >= 10 && <p className="text-red-500 font-bold animate-pulse">최대치 도달!</p>}
-          <button 
-            className="bg-purple-500 text-white px-6 py-2 rounded-lg font-bold hover:bg-purple-600 transition"
-            onClick={() => dispatch(decrement())}
-          >
-            -
-          </button>
           <button 
             className="bg-gray-200 text-gray-700 px-6 py-2 rounded-lg font-bold hover:bg-gray-300 transition"
             onClick={() => dispatch(reset())}
@@ -59,17 +59,17 @@ export default function App() {
         <div className="flex flex-wrap items-center gap-3">
           <button 
             className="bg-blue-500 text-white px-6 py-2 rounded-lg font-bold hover:bg-blue-600 transition"
+            onClick={decrease}
+          >
+            -
+          </button>
+          <button 
+            className="bg-blue-500 text-white px-6 py-2 rounded-lg font-bold hover:bg-blue-600 transition"
             onClick={increase}
           >
             +
           </button>
           {count >= 10 && <p className="text-red-500 font-bold animate-pulse">최대치 도달!</p>}
-          <button 
-            className="bg-blue-500 text-white px-6 py-2 rounded-lg font-bold hover:bg-blue-600 transition"
-            onClick={decrease}
-          >
-            -
-          </button>
           <button 
             className="bg-gray-200 text-gray-700 px-6 py-2 rounded-lg font-bold hover:bg-gray-300 transition"
             onClick={resetZustand}
